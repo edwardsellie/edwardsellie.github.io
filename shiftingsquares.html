@@ -12,7 +12,7 @@ Released under the MIT license: http://jsbin.mit-license.org
 <head>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
   <meta charset="utf-8">
-  <title>JS Bin</title>
+  <title>ShiftingSquares</title>
 </head>
 <body>
 
@@ -26,6 +26,7 @@ for(var i= 0; i<1000; i+=72){
     var rect = paper.rect(j*72, i, 50, 50);
     rect.attr({fill: "#67d0f0"});
     rect.hover(spin);
+    rect.touchstart(spin);
   }
 }
 function spin(){
