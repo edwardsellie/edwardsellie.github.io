@@ -27,6 +27,7 @@ for(var i=0; i<1000; i+=55){
     var circ = paper.circle(j*55, i, 25);
     circ.attr({"fill":"#421155"});
     circ.hover(change);
+    circ.touchstart(change);
   }
 }
 function change(evt){
